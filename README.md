@@ -1,4 +1,4 @@
-# Elementary/Ubuntu setup
+# Elementary setup
 
 ## General
 ### Power management (powertop)
