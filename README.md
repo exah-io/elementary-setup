@@ -74,6 +74,7 @@ interval:
   swipe: 1
   pinch: 1
 ```
+- Add `/usr/local/bin/fusuma -d` to the list of Elementary's startup applications
 ## Development
 - [VSCode](https://code.visualstudio.com/docs/setup/linux)
 - Node.js with [NVM](https://github.com/nvm-sh/nvm)
