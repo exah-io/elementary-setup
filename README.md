@@ -6,7 +6,7 @@
 sudo sh -c "echo 'kernel.nmi_watchdog=0' >> /etc/sysctl.conf"
 ```
 
-### Make Firefox safer (AppArmor)
+### Enable Firefox AppArmor profile
 - Install apparmor utils:
 ```
 sudo apt install apparmor-utils
