@@ -1,24 +1,11 @@
 # Elementary setup
 
 ## General
-### Power management (powertop)
-- Check Powertop tunables tab. If not 'Good', then create **/etc/rc.local**, add the following and make it executable:
+### Disable nmi watchdog
 ```
-#!/bin/sh -e
-#
-# rc.local
-#
-# This script is executed at the end of each multiuser runlevel.
-# Make sure that the script will "exit 0" on success or any other
-# value on error.
-#
-# In order to enable or disable this script just change the execution
-# bits.
-#
-# By default this script does nothing.
-sudo powertop --auto-tune
-exit 0
+sudo sh -c "echo 'kernel.nmi_watchdog=0' >> /etc/sysctl.conf"
 ```
+
 ### Make Firefox safer (AppArmor)
 - Install apparmor utils:
 ```
